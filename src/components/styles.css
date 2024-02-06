@@ -1,0 +1,39 @@
+.cards {
+    
+}
+
+.card {
+    display: inline-block; /* or display: block; */
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    margin-left: 20px;
+  }
+  
+.card:hover {
+transform: scale(1.05);
+box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
+}
+
+.card.p {
+    max-width: 140px;
+    overflow-wrap: break-word;
+}
+
+.cardWithoutHover{
+
+    display: inline-block; /* or display: block; */
+    background-color: #729484;
+    border-radius: 8px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+}
+
+.cardWithoutHover.p {
+    max-width: 140px;
+    overflow-wrap: break-word;
+}
