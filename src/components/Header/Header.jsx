@@ -1,11 +1,10 @@
-function Header({title="Tuna Okçu", subtitleVsLanguages, language, setLanguage}){
+function Header({title="Tuna Okçu", subtitleVsLanguages, language}){
     return<div style={{display: "flex", alignItems: "center", marginLeft: "30px"}}> 
         <div className="cardWithoutHover" >
             <h1>{title}</h1> 
             <h2>{subtitleVsLanguages[language]}</h2>
             <Contact language={language}></Contact>
         </div>
-        <Dropdown setLanguage={setLanguage}/>
     </div>
 }
 
