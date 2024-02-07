@@ -6,6 +6,7 @@ import breather from "./../../assets/breather.png";
 
 function Projects({language}){
     const projects = {"english": "Projects", "turkish": "Projeler", "japanese": "プロジェクト0"}
+    const description = {"english": "Click on any of the projects to view interactive demos.", "turkish": "Projelerden herhangi birine tıklayarak etkileşimli demoları inceleyebilirsiniz."}
     const elements = {
         "hull": {
             "english": {title: "Convex Hull", text:"Convex hull algorithm visualizer. WebGL and JavaScript."},
@@ -21,9 +22,11 @@ function Projects({language}){
         }
     }
 
+
     return (
         <div className="cardWithoutHover">
         <h2>{projects[language]}</h2>
+            <h3>{description[language]}</h3>
             <div style={{display: "flex", flexDirection: "row", alignItems:"center", justifyContent: "center", marginTop: "20px"}}>
                 <Project image={hull} title={elements["hull"][language].title} link="https://www.youtube.com/watch?v=cQCvArzwctU&feature=youtu.be"><p>{elements["hull"][language].text}</p></Project>
                 <Project image={octopus} title={elements["octopus"][language].title} link="https://tunaokcu.github.io/Octopus/"><p>{elements["octopus"][language].text}</p></Project>

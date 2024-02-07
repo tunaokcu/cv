@@ -2,7 +2,12 @@ import dropdownClosed from  "./../../assets/dropdown.png"
 import dropdownOpen from "./../../assets/droppeddown.png"
 import { useState } from 'react'
 
-function Dropdown({setLanguage}){
+import {Link} from "react-router-dom";
+
+const URL_BASE = "/cv"
+
+
+function Dropdown(){
     const [open, setOpen] = useState(false);
 
     function handleMouseEnter(){
@@ -13,12 +18,11 @@ function Dropdown({setLanguage}){
         setOpen(false);
     }
 
-    function transitionToTr(){ setLanguage("turkish"); }
-    function transitionToEng(){ setLanguage("english"); }
 
     let listElem = <ul style={{marginLeft:"30px"}}>
-        <button onClick={transitionToTr} style={{width:"60px"}}>Tr</button><br></br>
-        <button onClick={transitionToEng} style={{width:"60px"}}>Eng</button>
+        <li style={{width:"60px"}}><Link to={URL_BASE + "/tr"}>Tr</Link></li>
+        <li style={{width:"60px"}}><Link to={URL_BASE + "/en"}>En</Link></li>
+        <li style={{width:"60px"}}><Link to={URL_BASE + "/jp"}>Jp</Link></li>
     </ul>
 
     return (
