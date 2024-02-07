@@ -4,7 +4,7 @@ import './App.css'
 import Header from './components/Header/Header'
 import Projects from './components/Projects/Projects'
 
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 
 const URL_BASE = "/cv"
 
