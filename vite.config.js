@@ -7,7 +7,7 @@ export default defineConfig({
   base: "/cv",
   build:{
     rollupOptions: {
-      external: ["react-router-dom"]
+      external: []
     }
   }
 })
