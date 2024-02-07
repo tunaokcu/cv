@@ -9,7 +9,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const URL_BASE = "/cv"
 
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   { path: URL_BASE, element: <EnApp/>}, //english
   { path: URL_BASE + "/en", element: <EnApp/>}, //english
   { path: URL_BASE + "/tr", element: <TrApp/>}//,{ path: '/jp', element: <JpApp/>}
