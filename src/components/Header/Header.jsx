@@ -1,5 +1,5 @@
 function Header({title="Tuna Okçu", subtitleVsLanguages, language}){
-    return<div style={{display: "flex", alignItems: "center", marginLeft: "30px"}}> 
+    return<div style={{display: "flex", alignItems: "center", justifyContent: "center"}}> 
         <div className="cardWithoutHover" >
             <h1>{title}</h1> 
             <h2>{subtitleVsLanguages[language]}</h2>

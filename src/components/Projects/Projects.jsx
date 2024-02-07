@@ -26,11 +26,11 @@ function Projects({language}){
     return (
         <div className="cardWithoutHover">
             <h2>{projects[language]}</h2>
-                <div style={{display: "flex", flexDirection: "row", alignItems:"center", justifyContent: "center", marginTop: "20px"}}>
-                    <Project image={hull} title={elements["hull"][language].title} link="https://www.youtube.com/watch?v=cQCvArzwctU&feature=youtu.be"><p>{elements["hull"][language].text}</p></Project>
-                    <Project image={octopus} title={elements["octopus"][language].title} link="https://tunaokcu.github.io/Octopus/"><p>{elements["octopus"][language].text}</p></Project>
-                    <Project image={breather} title={elements["breather"][language].title} link="https://tunaokcu.github.io/breatherSurfaces/"><p>{elements["breather"][language].text}</p></Project>
-                </div>
+            <div style={{display: "flex", flexDirection: "row", alignItems:"center", justifyContent: "center", marginTop: "20px"}}>
+                <Project image={hull} title={elements["hull"][language].title} link="https://www.youtube.com/watch?v=cQCvArzwctU&feature=youtu.be"><p>{elements["hull"][language].text}</p></Project>
+                <Project image={octopus} title={elements["octopus"][language].title} link="https://tunaokcu.github.io/Octopus/"><p>{elements["octopus"][language].text}</p></Project>
+                <Project image={breather} title={elements["breather"][language].title} link="https://tunaokcu.github.io/breatherSurfaces/"><p>{elements["breather"][language].text}</p></Project>
+            </div>
         </div>
     )
 }

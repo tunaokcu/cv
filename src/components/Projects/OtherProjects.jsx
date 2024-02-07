@@ -8,10 +8,10 @@ function OtherProjects({language}){
             "english": {title: "PCA and Logistic Regression", text:"PCA and Logistic Regression applied on MNIST dataset using only NumPy."}
         },
         "languageDefinition": {
-            "english": {title: "Programming Language Definition", text:"Language specification for a programming language specialized for IOT applications using BNF. Working lexer and parser for the language using Lex and Yacc."}
+            "english": {title: "Programming Language Definition", text:"Language specification using BNF for a programming language specialized for IOT applications. Working lexer and parser for the language using Lex and Yacc."}
         },
         "graphicsLibrary": {
-            "english": {title: "3D Web Graphics Library", text:"WebGL-based 3D web graphics library. Features a scene graph class to facilitate hierarchical modeling, various resizable geometric primitives(plane, cube, sphere), lighting, camera, surface material, textured cubes(added to facilitate the development of voxel-based games),  the ability to easily specify new parametric surfaces(breather and torus are provided as examples), and an incomplete obj file parser and loader. Work in progress."},
+            "english": {title: "3D Web Graphics Library", text:"WebGL-based 3D web graphics library. Scene graphs, modeling, resizable geometric primitives(plane, cube, sphere), lighting, camera, surface material, textured cubes, parametric surfaces, an incomplete obj file parser and loader. Work in progress."},
         },
 
 

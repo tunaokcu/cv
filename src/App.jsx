@@ -4,6 +4,7 @@ import './App.css'
 import Header from './components/Header/Header'
 import Projects from './components/Projects/Projects'
 import OtherProjects from './components/Projects/OtherProjects'
+import Certificates from './components/Projects/Certificates'
 
 function App() {
   const [language, setLanguage] = useState("english");
@@ -17,6 +18,7 @@ function App() {
     <Header subtitleVsLanguages={subtitles} language={language} setLanguage={setLanguage}/>
     <Projects language={language}/>
     <OtherProjects language={language}/>
+    <Certificates language={language}/>
   </>
 }
 
