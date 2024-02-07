@@ -6,6 +6,8 @@ export default defineConfig({
   plugins: [react()],
   base: "/cv",
   build:{
-    outDir: "build"
+    rollupOptions: {
+      external: ["react-router-dom"]
+    }
   }
 })
