@@ -5,6 +5,7 @@ import stanfordML from "./../../assets/stanfordML.jpeg";
 import reactBasics from "./../../assets/metaReact.jpeg";
 import tkinter from "./../../assets/guiPython.jpeg";
 import microsoftC from "./../../assets/c.png";
+import EFCL from "./../../assets/EFCL.png";
 
 
 
@@ -26,6 +27,9 @@ function Certificates({language}){
         },
         "microsoftC": {
             "english": {title: "Foundational C# with Microsoft"}
+        },
+        "EFCL": {
+            "english": {title: "EFCL Summer School on Open Source IC Design and Computer Architectures"}
         }
     }
 
@@ -41,6 +45,7 @@ function Certificates({language}){
             <div style={{display: "flex", flexDirection: "row", alignItems:"center", marginTop: "20px"}}>
                 <Project image={tkinter} title={elements["tkinter"][language].title} link="https://www.coursera.org/account/accomplishments/verify/TKQS38ZERE9S"></Project>
                 <Project image={microsoftC} title={elements["microsoftC"][language].title} link="https://www.freecodecamp.org/certification/fcc61f3a902-ed7a-4c7b-8b52-ea956991a20a/foundational-c-sharp-with-microsoft"></Project>
+                <Project image={EFCL} title={elements["EFCL"][language].title} link=""></Project>
             </div>
         </div>
     )
